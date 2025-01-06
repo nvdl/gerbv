@@ -822,7 +822,7 @@ main(int argc, char* argv[]) {
                 }
                 sscanf(optarg, "%fx%f", &userSuppliedWidth, &userSuppliedHeight);
                 if (((userSuppliedWidth < 0.001) || (userSuppliedHeight < 0.001))
-                    || ((userSuppliedWidth > 2000) || (userSuppliedHeight > 2000))) {
+                    || ((userSuppliedWidth > 20000) || (userSuppliedHeight > 20000))) {
                     fprintf(stderr, _("Specified window size is out of bounds.\n"));
                     exit(1);
                 }
